@@ -1,6 +1,7 @@
 /* 
     General Styles
 */
+
 body{
     background: #a89ef2;
 }
@@ -122,4 +123,12 @@ border-radius: 200px;
 }
 .bg-lightGreen{
     background-color: #09F209;
+
+}
+.MDiv{
+    background-color: aqua;
+}
+.appTitle{
+    background-color: aqua;
+
 }
