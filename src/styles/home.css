@@ -105,13 +105,13 @@ background: #4999EE;
 border-radius: 200px;
 }
 .emailCircle{
-    position: absolute;
-    width: 43px;
-    height: 40px;
-    left: -12px;
-    top: 64px;    
-    background: #FF0000;
-    border-radius: 200px;
+  position: absolute;
+  width: 43px;
+  height: 44px;
+  left: -12px;
+  top: 22px;
+  background: #FF0000;
+  border-radius: 200px;
 }
 
 .pwSquare{
@@ -194,3 +194,12 @@ html {
       transform:translateX(25%);
     }
   }
+
+  .img1{
+    height: 164px;
+    width: 206px;
+    position: absolute;
+    left: -63px;
+    bottom: 253px;
+}
+  

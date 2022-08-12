@@ -5,6 +5,6 @@ import { Link } from "react-router-dom";
 
 export const Quiz = () => {
     return (
-<div> insert questions here! 
-</div>
+        <><div className="bg"></div><div className="bg bg2"></div><div className="bg bg3"></div><div> insert questions here!
+        </div></>
 )};

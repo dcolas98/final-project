@@ -6,9 +6,6 @@ body{
     background: #a89ef2;
 }
 
-#app{
-    
-}
 .appWords{
     margin-bottom: 30px;
 }
@@ -84,8 +81,10 @@ border-radius: 200px;
 }
 
 .img1{
-    height: 300px;
-    width: 150px;
+    height: 157px;
+    width: 239px;
+    position: absolute;
+    bottom: 347px;
 
 }
 

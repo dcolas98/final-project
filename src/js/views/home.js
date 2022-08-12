@@ -1,20 +1,22 @@
 import React from "react";
 import "../../styles/home.css";
 import { Link } from "react-router-dom";
-
+import img from "../../img/logo.png"
 export const Home = () => (
   <><div className="bg"></div><div className="bg bg2"></div><div className="bg bg3"></div><div className="text-center mt-5">
     <div className="login">
       <div className="everything">
         <div className="logo">
-          <div className="img1">
+          <div>
+            <img className="img1" src={img}/>
           </div>
         </div>
         <form>
           <div className="epw">
             <div class="form-group">
+              <div className="img1">
+              </div>
               <div className="emailCircle"></div>
-              <p><strong className="firstLetter">I   </strong><strong>Code</strong></p>
               <label for="exampleInputEmail1">Email address</label>
               <input type="email" class="emInput form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
             </div>

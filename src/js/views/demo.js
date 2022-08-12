@@ -9,7 +9,7 @@ export const Demo = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
-		<div className="container">
+		<><div className="bg"></div><div className="bg bg2"></div><div className="bg bg3"></div><div className="container">
 			<ul className="list-group">
 				{store.demo.map((item, index) => {
 					return (
@@ -21,12 +21,12 @@ export const Demo = () => {
 								<span>Link to: {item.title}</span>
 							</Link>
 							{// Conditional render example
-							// Check to see if the background is orange, if so, display the message
-							item.background === "orange" ? (
-								<p style={{ color: item.initial }}>
-									Check store/flux.js scroll to the actions to see the code
-								</p>
-							) : null}
+								// Check to see if the background is orange, if so, display the message
+								item.background === "orange" ? (
+									<p style={{ color: item.initial }}>
+										Check store/flux.js scroll to the actions to see the code
+									</p>
+								) : null}
 							<button className="btn btn-success" onClick={() => actions.changeColor(index, "orange")}>
 								Change Color
 							</button>
@@ -38,6 +38,6 @@ export const Demo = () => {
 			<Link to="/">
 				<button className="btn btn-primary">Back home</button>
 			</Link>
-		</div>
+		</div></>
 	);
 };
