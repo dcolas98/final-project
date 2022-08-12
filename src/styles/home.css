@@ -17,9 +17,14 @@ height: 710px;
 left: 443px;
 top: 136px;
 
-background: #C7FDE5;
+background: #eddd9e00;
 border: 1px solid #000000;
 border-radius: 200px;
+
+}
+.firstLetter{
+  font-size: xxx-large;
+    font-family: fantasy;
 }
 
 .logo{
@@ -28,47 +33,49 @@ border-radius: 200px;
     height: 147px;    
     left: 93px;
     margin-bottom: 25px;
-}
-.vecRed{
+    animation: wiggle 2s linear infinite;
     position: absolute;
-left: 2.05%;
-right: 59.62%;
-top: 73.36%;
-bottom: -42.06%;
+  left: calc(50% - 3em);
+  top: calc(50% - 2em);
+  
+  height: 4em;
+  width: 7em;
+  
+  border: none;
+  border-radius: 0 0 0.2em 0.2em;
+  color: #fff;
+  font-family: Helvetica, Arial, Sans-serif;
+  font-size: 1em;
+  transform-origin: 50% 5em;
+  position: absolute;
 
-background: #E3073C;
-/* transform: matrix(1, 0 , 0, -1, 0, 0); */
+  height: 102px;
+  width: 202px;
 }
-.vecYellow{
-    position: absolute;
-left: 21.24%;
-right: 40.43%;
-top: 93.54%;
-bottom: -62.25%;
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
 
-background: #FFD200;
-/* transform: matrix(1, 0, 0, -1, 0, 0); */
-}
-.vecGreen{
-    position: absolute;
-left: 40.43%;
-right: 21.24%;
-top: 73.35%;
-bottom: -42.05%;
-
-background: #06E07F;
-/* transform: matrix(1, 0, 0, -1, 0, 0); */
-}
-.vecBlue{
-    position: absolute;
-left: 59.62%;
-right: 2.05%;
-top: 93.53%;
-bottom: -62.24%;
-
-background: #1F84EF;
-/* transform: matrix(1, 0, 0, -1, 0, 0); */
-}
 .emailRec{
     position: absolute;
 width: 423px;
@@ -101,8 +108,8 @@ border-radius: 200px;
     position: absolute;
     width: 43px;
     height: 40px;
-    left: 102px;
-    top: 236px;    
+    left: -12px;
+    top: 64px;    
     background: #FF0000;
     border-radius: 200px;
 }
@@ -111,16 +118,11 @@ border-radius: 200px;
     position: absolute;
     width: 42px;
     height: 38px;
-    left: 103px;
-    bottom: 355px;
+    left: 0px;
+    bottom: 189px;    
     background: #FFD200;
 }
 
-.img1{
-    height: 300px;
-    width: 150px;
-
-}
 .bg-lightGreen{
     background-color: #09F209;
 
@@ -132,3 +134,63 @@ border-radius: 200px;
     background-color: aqua;
 
 }
+.everything{
+    position: absolute;
+    bottom: 181px;
+    right: 99px;
+}
+
+html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+  
+  h1 {
+    font-family:monospace;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
