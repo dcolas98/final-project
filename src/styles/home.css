@@ -108,7 +108,7 @@ border-radius: 200px;
   position: absolute;
   width: 43px;
   height: 44px;
-  left: -12px;
+  left: -33px;
   top: 22px;
   background: #FF0000;
   border-radius: 200px;
@@ -118,8 +118,8 @@ border-radius: 200px;
     position: absolute;
     width: 42px;
     height: 38px;
-    left: 0px;
-    bottom: 189px;    
+    left: -33px;
+    bottom: 187px;    
     background: #FFD200;
 }
 
